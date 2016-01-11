@@ -1,9 +1,9 @@
 # Coding standards
 Coding standards for development
 
-- [HTML](./html/README.md)
-- [SCSS / CSS](./scss/README.md)
-- [JavaScript](./javascript/README.md)
+- [HTML](./html/)
+- [SCSS / CSS](./scss/)
+- [JavaScript](./javascript/)
 
 
 ## References
