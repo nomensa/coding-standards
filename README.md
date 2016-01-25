@@ -2,7 +2,7 @@
 Coding standards for development
 
 - [HTML](./html/)
-- [SCSS / CSS](./scss/)
+- [CSS / SCSS](./css/)
 - [JavaScript](./javascript/)
 
 
