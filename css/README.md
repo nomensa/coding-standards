@@ -1,6 +1,6 @@
-# SCSS / CSS
+# CSS / SCSS
 
-Our standard for writing SCSS and CSS.
+Our standard for writing CSS and SCSS.
 
 
 ## Table of Contents
