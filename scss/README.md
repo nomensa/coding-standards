@@ -86,10 +86,8 @@ Our standard for writing SCSS and CSS.
     // good
     // this comment will NOT get output the the uncompressed CSS
 
-    // bad
-    // This is a very long comment that might span multiple lines and therefore might want to span across two lines
-
-    // good
+    // also good
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
+<<<<<<< HEAD
     ```
