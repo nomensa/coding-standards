@@ -89,41 +89,22 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     function foo() {
-        $(window).scroll() {
-            var link = $('body').find('a');
+        var foo = 1;
 
-            a.click(function() {
-                var list = $('body').find('ul');
-                // ...stuff...
-            });
+        foo.onclick = function () {
+            var baz = 2;
+
+            foo + baz;
         }
     }
 
     // good
     function foo() {
-        var link = $('body').find('a'),
-            list = $('body').find('ul');
+        var foo = 1,
+            baz = 2;
 
-        $(window).scroll() {
-
-            a.click(function() {
-                // ...stuff...
-            });
-        }
-    }
-
-    // good
-    function foo() {
-        $(window).scroll() {
-            var link,
-                list;
-
-            link = $('body').find('a');
-
-            a.click(function() {
-                list = $('body').find('ul');
-                // ...stuff...
-            });
+        foo.onclick = function () {
+            foo + baz;
         }
     }
     ```
@@ -133,6 +114,8 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     var foo_and_bar;
+    // bad
+    var foo-and-bar;
 
     // good
     var fooAndBar;
@@ -199,35 +182,35 @@ Our standard for writing JavaScript.
 
     ```javascript
     // bad
-    $('.foo').onclick = function() {}
+    fooElement.onclick = function() {}
 
     // good
-    $('.foo').onclick = function () {}
+    fooElement.onclick = function () {}
     ```
 
 - Variables that are passed to and from functions should be descriptive.
 
     ```javascript
     // bad
-    $('.foo').click(function(e){
+    fooElement.addEventListener('click', function(e){
         e.preventDefault();
     });
 
     // good
-    $('.foo').click(function(event){
-        event.preventDetault();
+    fooElement.addEventListener.click('click', function(event){
+        event.preventDefault();
     });
     ```
 
 - Variables should not be assigned inside function declariations.
 
-    ```javascritp
+    ```javascript
     // bad
-    function foo(bar = 'foo') {}
+    function foo(var bar = 'foo') {}
 
     // good
     function foo() {
-        bar = 'foo'
+        var bar = 'foo'
     }
 
 ## Statements
@@ -272,7 +255,7 @@ Our standard for writing JavaScript.
     ```
 
 
-- ```switch``` Statements should indent each case
+- `switch` Statements should indent each case
 
     ```javascript
     // bad
