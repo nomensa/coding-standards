@@ -92,9 +92,7 @@ Our standard for writing JavaScript.
         var foo = 1;
 
         foo.onclick = function () {
-            var baz = 2;
-
-            foo + baz;
+            // ...stuff...
         }
     }
 
@@ -104,7 +102,7 @@ Our standard for writing JavaScript.
             baz = 2;
 
         foo.onclick = function () {
-            foo + baz;
+            // ...stuff...
         }
     }
     ```
@@ -193,12 +191,12 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     fooElement.addEventListener('click', function(e){
-        e.preventDefault();
+        // ...stuff...
     });
 
     // good
     fooElement.addEventListener.click('click', function(event){
-        event.preventDefault();
+        // ...stuff...
     });
     ```
 
@@ -220,16 +218,16 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     if (foo){
-
+        // ...stuff...
     } else{
-
+        // ...stuff...
     }
 
     // good
     if (foo) {
-
+        // ...stuff...
     } else {
-
+        // ...stuff...
     }
 
 
@@ -261,12 +259,11 @@ Our standard for writing JavaScript.
     // bad
     switch(foo) {
         case bar:
-        foo = bar;
-
+        // ...stuff...
         break;
 
         case foo:
-        foo++;
+        // ...stuff...
 
         break
         }
@@ -275,13 +272,11 @@ Our standard for writing JavaScript.
     // good
     switch(foo) {
         case bar:
-            foo = bar;
-
+            // ...stuff...
             break;
 
         case foo:
-            foo++;
-
+            // ...stuff...
             break
         }
     }
