@@ -9,6 +9,7 @@ Our standard for writing CSS and SCSS.
  - [BEM class naming](bem-class-naming)
 - [SCSS](#scss)
  - [Comments](comments)
+ - [Variables](variables)
 
 
 ## CSS
