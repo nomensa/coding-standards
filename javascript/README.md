@@ -6,6 +6,12 @@ Our standard for writing JavaScript.
 ## Table of Contents
 
 - [Comments](comments)
+- [Variables](variables)
+- [Strict mode](strict mode)
+- [Strings](strings)
+- [Functions](functions)
+- [Statements](statements)
+- [New instances](new instances)
 
 
 ## Comments
