@@ -90,3 +90,57 @@ Our standard for writing CSS and SCSS.
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
     ```
+
+### Extend and Include
+
+- Extend rules should be positioned at the top of the style.
+
+    ```scss
+    // bad
+    .nomensa {
+        // ...stuff...
+        @extend .another-class;
+    }
+
+    // good
+    .nomensa {
+        @extend .another-class;
+
+        // ...stuff...
+    }
+    ```
+
+- Include rules should be positioned at the top of the style but below Exntend rules.
+Include rules can be moved below styles if the cascaded or nested position benefits the rule.
+
+    ```scss
+    // bad
+    .nomensa {
+        @include opacity(1);
+        @extend .another-class;
+        // ...stuff...
+    }
+
+    // good
+    .nomensa {
+        @extend .another-class;
+        @include opacity(1);
+        // ...stuff...
+    }
+    ```
+- Include rules that are positioned below styles should be separated by a new line
+
+    ```scss
+    // bad
+    .nomensa {
+        // ...stuff...
+        @include opacity(1);
+    }
+
+    // good
+    .nomensa {
+        // ...stuff...
+
+        @include opacity(1);
+    }
+    ```
