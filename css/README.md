@@ -5,10 +5,10 @@ Our standard for writing CSS and SCSS.
 
 ## Table of Contents
 
-- [CSS](css)
- - [BEM class naming](bem-class-naming)
+- [CSS](#css)
+ - [BEM class naming](#bem-class-naming)
 - [SCSS](#scss)
- - [Comments](comments)
+ - [Comments](#comments)
 
 
 ## CSS
