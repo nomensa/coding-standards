@@ -155,6 +155,7 @@ Our standard for writing JavaScript.
 
     // good
     var foo = 'foo';
+    ```
 
 ## Functions
 
