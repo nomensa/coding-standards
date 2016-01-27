@@ -90,3 +90,7 @@ Our standard for writing CSS and SCSS.
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
     ```
+
+### Vendor prefixes
+
+- Don't use them.
