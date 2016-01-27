@@ -72,6 +72,35 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
+### URL format
+
+- URLs should be escaped in apostrophes
+
+    ```scss
+    // bad
+    .nomensa {
+        background-image: url(/assets/image.png);
+    }
+
+    // good
+    .nomensa {
+        background-image: url('/assets/image.png');
+    }
+    ```
+
+- URLs should not include the procol or domain name
+
+    ```scss
+    // bad
+    .nomensa {
+        background-image: url('https://nomensa.com/assets/image.png');
+    }
+
+    // good
+    .nomensa {
+        background-image: url('/assets/image.png');
+    }
+    ```
 
 ## SCSS
 
