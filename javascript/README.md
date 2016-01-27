@@ -94,12 +94,14 @@ Our standard for writing JavaScript.
         foo.onclick = function () {
             // ...stuff...
         }
+
+        var bar = 2;
     }
 
     // good
     function foo() {
         var foo = 1,
-            baz = 2;
+            bar = 2;
 
         foo.onclick = function () {
             // ...stuff...
@@ -210,6 +212,7 @@ Our standard for writing JavaScript.
     function foo() {
         var bar = 'foo'
     }
+    ```
 
 ## Statements
 
