@@ -74,7 +74,7 @@ Our standard for writing CSS and SCSS.
 
 ### Strings
 
-- Strings should be escaped using apostrophes.
+- Strings should be escaped using single quotes.
 
     ```scss
     // bad
