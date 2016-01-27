@@ -7,11 +7,11 @@ Our standard for writing JavaScript.
 
 - [Comments](comments)
 - [Variables](variables)
-- [Strict mode](strict mode)
+- [Strict mode](strict-mode)
 - [Strings](strings)
 - [Functions](functions)
 - [Statements](statements)
-- [New instances](new instances)
+- [New instances](new-instances)
 
 
 ## Comments
