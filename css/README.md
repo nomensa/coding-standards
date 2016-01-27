@@ -90,3 +90,17 @@ Our standard for writing CSS and SCSS.
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
     ```
+
+### Variable names
+
+- Variable names should be lowercased and separated with a dash.
+    ```scss
+    // bad
+    $h6Size: 20px;
+
+    // bad
+    $h6_size: 20px;
+
+    // good
+    $h6-size: 20px;
+    ```
