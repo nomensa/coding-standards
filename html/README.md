@@ -5,12 +5,12 @@
 - JavaScript hooks should be written as data-js-[comonent].
 
     ```html
-    // bad
+    <!-- bad -->
     <div class="js-accordion">
 
-    // bad
+    <!-- bad -->
     <div data-accordion>
 
-    // good
+    <!-- good -->
     <div data-js-accordion>
     ```
