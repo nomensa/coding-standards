@@ -90,3 +90,18 @@ Our standard for writing CSS and SCSS.
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
     ```
+
+### Font sizes
+
+- Font sizes should use the 'em' or '%' measurements.
+
+    ```scss
+    // bad
+    .nomensa {
+        font-size: pxtoem(30);
+    }
+
+    // good
+    .nomensa {
+        font-size: pxtopercent(30);
+    }
