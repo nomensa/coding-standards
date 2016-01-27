@@ -72,6 +72,22 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
+    ### Indentation
+
+    - CSS should be indented by 4 space characters.
+
+        ```scss
+        // bad
+        .nomensa {
+          z-index: 1;
+        }
+
+        // good
+        .nomensa {
+            z-index: 1;
+        }
+        ```
+
 
 ## SCSS
 
