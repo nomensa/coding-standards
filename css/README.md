@@ -72,6 +72,97 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
+    ### Properties and Values
+
+    - Each property must be on its own line, indented at one level.
+
+        ```scss
+        // bad
+        .nomensa { z-index: 1; }
+
+        // good
+        .nomensa {
+            z-index: 1;
+        }
+        ```
+
+    - A value must be separated with a space from the property colon.
+
+        ```scss
+        // bad
+        .nomensa {
+            z-index:1;
+        }
+
+        // good
+        .nomensa {
+            z-index: 1;
+        }
+        ```
+
+    - Properties should be written as shorthand where possible.
+
+        ```scss
+        // bad
+        .nomensa {
+            margin-top: 100px;
+            margin-right: 100px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+        }
+
+        // good
+        .nomensa {
+            margin: 100px;
+        }
+        ```
+
+    - Decimal values should not omit zeros.
+
+        ```scss
+        // bad
+        .nomensa {
+            opacity: .9;
+        }
+
+        // good
+        .nomensa {
+            opacity: 0.9;
+        }
+        ```
+
+    - Properties should be sorted in alphabetical order.
+
+        ```scss
+        // bad
+        .nomensa {
+            position: absolute;
+            left: -999em;
+            top: 0;
+        }
+
+        // good
+        .nomensa {
+            left: -999em;
+            position: absolute;
+            top: 0;
+        }
+        ```
+
+    - There should not be a space between parenthesis.
+
+        ```scss
+        // bad
+        .nomensa {
+            background: url( 'path/to/image.png' );
+        }
+
+        // good
+        .nomensa {
+            background: url('path/to/image.png');
+        }
+        ```
+
 
 ## SCSS
 
