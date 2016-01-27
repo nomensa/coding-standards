@@ -72,6 +72,22 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
+    ### Selectors
+
+    - Selectors should not be in a depth greater than 4.
+
+        ```scss
+        // bad
+        .nomensa div p li a {
+            // ...stuff...
+        }
+
+        // good
+        .nomensa li a  {
+            // ...stuff...
+        }
+        ```
+
 
 ## SCSS
 
