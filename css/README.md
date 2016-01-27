@@ -72,6 +72,54 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
+### Colours
+
+- Colours should be written as hexadecimal values.
+
+    ```scss
+    // bad
+    .nomensa {
+        color: grey;
+    }
+
+    // good
+    .nomensa {
+        color: #ccc;
+    }
+    ```
+
+- Hexadecimal colours should be shortened and lowercase.
+
+    ```scss
+    // bad
+    .nomensa {
+        color: #ff0000;
+    }
+
+    // bad
+    .nomensa {
+        color: #F00;
+    }
+
+    // good
+    .nomensa {
+        color: #f00;
+    }
+    ```
+
+- RGBA values should be separated by a space
+
+    ```scss
+    // bad
+    .nomensa {
+        background: rgba(0,0,0,0.5);
+    }
+
+    // good
+    .nomensa {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    ```
 
 ## SCSS
 
