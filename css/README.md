@@ -171,6 +171,7 @@ Our standard for writing CSS and SCSS.
 
     // good
     background: url('assets/image.png');
+    ```
 
 
 ## SCSS
