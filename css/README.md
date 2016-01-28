@@ -207,3 +207,61 @@ Our standard for writing CSS and SCSS.
     // This is a very long comment that might span multiple lines and
     // therefore might want to span across two lines
     ```
+
+### Nesting depth
+
+- Nested styles must not exceed 4 levels.
+
+    ```scss
+    // bad
+    .nomensa {
+
+        .inner {
+            ...
+
+            .title {
+                ...
+
+                .subtxt {
+                    ...
+
+                    .subtxt_inner {
+                        ...
+                    }
+                }
+            }
+        }
+    }
+
+    // bad
+    .nomensa {
+
+        .inner {
+            ...
+
+            .title .subtxt {
+                ...
+
+                .subtxt_inner {
+                    ...
+                }
+            }
+        }
+    }
+
+    // good
+    .nomensa {
+
+        .inner {
+            ...
+
+            .title {
+                ...
+
+                .subtxt {
+                    ...
+                }
+            }
+        }
+    }
+    ```
