@@ -243,6 +243,24 @@ Our standard for writing CSS and SCSS.
     // therefore might want to span across two lines
     ```
 
+### Sizing
+
+- Where possible, sizes should use the 'pxtoem' or 'pxtopercent' functions - especially for font sizes.
+
+    ```scss
+    // bad
+    .block {
+        font-size: 12px;
+        margin: 10px;
+    }
+
+    // good
+    .block {
+        font-size: pxtopercent(30);
+        margin: pxtoem(1);
+    }
+    ```
+
 ### Nesting depth
 
 - Nested styles must not exceed 4 levels.
