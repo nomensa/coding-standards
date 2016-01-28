@@ -31,3 +31,15 @@
     <!-- good -->
     <div class="nomensa">
     ```
+
+## Boolean attributes
+
+- Boolean attributes should not contain values.
+
+    ```html
+    <!-- bad -->
+    <input checked="checked" type="checkbox" />
+
+    <!-- good -->
+    <input checked type="checkbox" />
+    ```
