@@ -50,3 +50,15 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+## Class order
+
+- Multiple classes should be ordered alphabetically.
+
+    ```html
+    <!-- bad -->
+    <i class="icon icon--user icon--large" />
+
+    <!-- good -->
+    <i class="icon icon--large icon--user" />
+    ```
