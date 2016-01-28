@@ -7,8 +7,16 @@ Our standard for writing CSS and SCSS.
 
 - [CSS](#css)
  - [BEM class naming](#bem-class-naming)
+ - [Indentation](#indentation)
+ - [Brace alignment](#brace-alignment)
+ - [Selectors](#selectors)
+ - [Properties and Values](#properties-and-values)
+ - [Container heights](#container-heights)
 - [SCSS](#scss)
  - [Comments](#comments)
+ - [Sizing](#sizing)
+ - [Nesting depth](#nesting-depth)
+ - [Extend and Include](#extend-and-include)
 
 
 ## CSS
@@ -92,29 +100,29 @@ Our standard for writing CSS and SCSS.
 
 - The opening brace should be on the same line as the selector.
 
-    ```scss
-    // bad
-    .nomensa
+    ```css
+    /* bad */
+    .block
     {
-        // ...stuff...
+        /* stuff */
     }
 
-    // good
-    .nomensa {
-        // ...stuff...
+    /* good */
+    .block {
+        /* stuff */
     }
     ```
 
 - The closing brace should be on a new line and at the start of the line.
 
-    ```scss
+    ```css
     // bad
-    .nomensa {
-        // ...stuff... }
+    .block {
+        /* stuff */ }
 
     // good
-    .nomensa {
-        // ...stuff...
+    .block {
+        /* stuff */
     }
     ```
 
@@ -123,7 +131,7 @@ Our standard for writing CSS and SCSS.
 
 - Attribute selectors should be escaped using apostrophes.
 
-    ```scss
+    ```css
     /* bad */
     [aria-expanded=true] {
         /* stuff */
@@ -137,7 +145,7 @@ Our standard for writing CSS and SCSS.
 
 - Internet Explorer specific CSS should be prefixed with the 'ie[version]' class.
 
-    ```scss
+    ```css
     /* bad */
     html>/**/body .block {
         /* stuff */
@@ -289,20 +297,20 @@ Our standard for writing CSS and SCSS.
 
     ```css
     /* bad */
-    .nomensa {
+    .block {
         color: red;
     }
 
-    .nomensa {
+    .block {
         color: #ff0000;
     }
 
-    .nomensa {
+    .block {
         color: #F00;
     }
 
     /* good */
-    .nomensa {
+    .block {
         color: #f00;
     }
     ```
@@ -311,12 +319,12 @@ Our standard for writing CSS and SCSS.
 
     ```css
     /* bad */
-    .nomensa {
+    .block {
         background: rgba(0,0,0,0.5);
     }
 
     /* good */
-    .nomensa {
+    .block {
         background: rgba(0, 0, 0, 0.5);
     }
     ```
@@ -326,13 +334,13 @@ Our standard for writing CSS and SCSS.
 - `min-height` should be used instead of 'height' to avoid container overflow from being hidden.
 
     ```css
-    // bad
-    .nomensa {
+    /* bad */
+    .block {
         height: 400px;
     }
 
-    // good
-    .nomensa {
+    /* good */
+    .block {
         min-height: 400px;
     }
     ```
@@ -392,7 +400,7 @@ Our standard for writing CSS and SCSS.
                     ...
 
                     .block__heading-sub {
-                        ...
+                        // ...stuff...
                     }
                 }
             }
@@ -403,7 +411,7 @@ Our standard for writing CSS and SCSS.
     .block {
 
         &__heading-sub {
-            ...
+            ...// ...stuff...
         }
     ```
 

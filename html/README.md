@@ -1,5 +1,14 @@
 # HTML
 
+Our standard for writing HTML.
+
+
+## Table of Contents
+
+- [Comments](#comments)
+- [Character encoding](#character-encoding)
+- [URLs](#urls)
+
 
 ## Commments
 
@@ -35,8 +44,8 @@
 
     ```html
     <!-- bad -->
-    <img alt="" src="http://nomensa.com/path/to/image.png" />
+    <img alt="" src="http://example.com/path/to/image.png" />
 
     <!-- good -->
-    <img alt="" src="//nomensa.com/path/to/image.png" />
+    <img alt="" src="//example.com/path/to/image.png" />
     ```
