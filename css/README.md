@@ -224,6 +224,42 @@ Our standard for writing CSS and SCSS.
     }
     ```
 
+- Hex colour values should be written in shorthand and lowercase.
+
+    ```css
+    /* bad */
+    .nomensa {
+        color: red;
+    }
+
+    .nomensa {
+        color: #ff0000;
+    }
+
+    .nomensa {
+        color: #F00;
+    }
+
+    /* good */
+    .nomensa {
+        color: #f00;
+    }
+    ```
+
+- RGB/A values should be separated by a spaces.
+
+    ```css
+    /* bad */
+    .nomensa {
+        background: rgba(0,0,0,0.5);
+    }
+
+    /* good */
+    .nomensa {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    ```
+
 
 ## SCSS
 
