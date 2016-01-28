@@ -50,3 +50,19 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+
+## JavaScript hooks
+
+- JavaScript hooks should be written as data-js="[component]".
+
+    ```html
+    <!-- bad -->
+    <div class="js-accordion">
+
+    <!-- bad -->
+    <div data-js-accordion>
+
+    <!-- good -->
+    <div data-js="accordion clickable">
+    ```
