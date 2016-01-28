@@ -50,3 +50,16 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+
+## Tags
+
+- HTML tags should be self closed where appropriate.
+
+    ```html
+    <!-- bad -->
+    <link></link>
+
+    <!-- good -->
+    <link />
+    ```
