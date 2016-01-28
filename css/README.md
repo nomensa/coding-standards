@@ -291,6 +291,22 @@ Our standard for writing CSS and SCSS.
     }
     ```
 
+### Container heights
+
+- `min-height` should be used instead of 'height' to avoid container overflow from being hidden.
+
+    ```css
+    // bad
+    .nomensa {
+        height: 400px;
+    }
+
+    // good
+    .nomensa {
+        min-height: 400px;
+    }
+    ```
+
 
 ## SCSS
 
