@@ -105,6 +105,19 @@ Our standard for writing CSS and SCSS.
     }
     ````
 
+- Internet Explorer specific CSS should be prefixed with the 'ie[version]' class.
+
+    ```scss
+    /* bad */
+    html>/**/body .block {
+        /* stuff */
+    }
+
+    /* good */
+    .ie8 .block {
+        /* stuff */
+    }
+    ```
 
 ### Properties and Values
 
