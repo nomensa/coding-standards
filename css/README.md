@@ -72,7 +72,7 @@ Our standard for writing CSS and SCSS.
     - [Mindbemding](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
     - [Battling BEM](https://medium.com/fed-or-dead/battling-bem-5-common-problems-and-how-to-avoid-them-5bbd23dee319#.o3bm1o3ni)
 
-    ### Properties and Values
+### Properties and Values
 
     - Each property must be on its own line, indented at one level.
 
