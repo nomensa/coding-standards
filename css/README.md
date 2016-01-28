@@ -239,6 +239,7 @@ Our standard for writing CSS and SCSS.
         &__heading-sub {
             ...
         }
+    ```
 
 ### Extend and Include
 
