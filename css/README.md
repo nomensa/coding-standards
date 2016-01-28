@@ -78,12 +78,12 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
       z-index: 1;
     }
 
     // good
-    .nomensa {
+    .block {
         z-index: 1;
     }
     ```
@@ -94,10 +94,10 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa { z-index: 1; }
+    .block { z-index: 1; }
 
     // good
-    .nomensa {
+    .block {
         z-index: 1;
     }
     ```
@@ -106,12 +106,12 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
         z-index:1;
     }
 
     // good
-    .nomensa {
+    .block {
         z-index: 1;
     }
     ```
@@ -120,7 +120,7 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
         margin-top: 100px;
         margin-right: 100px;
         margin-bottom: 100px;
@@ -128,7 +128,7 @@ Our standard for writing CSS and SCSS.
     }
 
     // good
-    .nomensa {
+    .block {
         margin: 100px;
     }
     ```
@@ -137,12 +137,12 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
         opacity: .9;
     }
 
     // good
-    .nomensa {
+    .block {
         opacity: 0.9;
     }
     ```
@@ -151,14 +151,14 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
         position: absolute;
         left: -999em;
         top: 0;
     }
 
     // good
-    .nomensa {
+    .block {
         left: -999em;
         position: absolute;
         top: 0;
@@ -169,12 +169,12 @@ Our standard for writing CSS and SCSS.
 
     ```css
     // bad
-    .nomensa {
+    .block {
         background: url( 'path/to/image.png' );
     }
 
     // good
-    .nomensa {
+    .block {
         background: url('path/to/image.png');
     }
     ```
@@ -238,6 +238,65 @@ Our standard for writing CSS and SCSS.
 
         &__heading-sub {
             ...
+        }
+
+### Extend and Include
+
+- `@extend` rules should be positioned at the top of the style.
+
+    ```scss
+    // bad
+    .block {
+        // ...stuff...
+        @extend .another-class;
+    }
+
+    // good
+    .block {
+        @extend .another-class;
+        // ...stuff...
+    }
+    ```
+
+- `@include` rules should be positioned at the top of the style but below `@extend` rules.
+
+    ```scss
+    // bad
+    .block {
+        @include opacity(1);
+        @extend .another-class;
+        // ...stuff...
+    }
+
+    // good
+    .block {
+        @extend .another-class;
+        @include opacity(1);
+        // ...stuff...
+    }
+    ```
+
+- `@includes` with inner `@content` often involve `@media` rules that rely on the cascade or nested rule sets and therefore should be included after regular properties. `@include` rules that are positioned below styles should be separated by a new line.
+
+    ```scss
+    // bad
+    .block {
+        @include opacity(1);
+        @extend .another-class;
+        // ...stuff...
+        @include breakpoint($mobile) {
+            // ...stuff...
+        }
+    }
+
+    // good
+    .block {
+        @include opacity(1);
+        @extend .another-class;
+        // ...stuff...
+
+        @include breakpoint($mobile) {
+            // ...stuff...
         }
     }
     ```
