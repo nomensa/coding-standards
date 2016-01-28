@@ -214,18 +214,18 @@ Our standard for writing CSS and SCSS.
 
     ```scss
     // bad
-    .nomensa {
+    .block {
 
-        .inner {
+        .block__element {
             ...
 
-            .title {
+            .block__title {
                 ...
 
-                .subtxt {
+                .block__title-heading {
                     ...
 
-                    .subtxt_inner {
+                    .block__heading-sub {
                         ...
                     }
                 }
@@ -233,35 +233,11 @@ Our standard for writing CSS and SCSS.
         }
     }
 
-    // bad
-    .nomensa {
-
-        .inner {
-            ...
-
-            .title .subtxt {
-                ...
-
-                .subtxt_inner {
-                    ...
-                }
-            }
-        }
-    }
-
     // good
-    .nomensa {
+    .block {
 
-        .inner {
+        &__heading-sub {
             ...
-
-            .title {
-                ...
-
-                .subtxt {
-                    ...
-                }
-            }
         }
     }
     ```
