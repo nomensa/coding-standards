@@ -27,4 +27,16 @@
 
         <!-- good -->
         <meta charset="utf-8">
+
+
+## URLs
+
+- URLs should not contain the protocol. URLs should be relative to avoid https security warnings.
+
+    ```html
+    <!-- bad -->
+    <img alt="" src="http://nomensa.com/path/to/image.png" />
+
+    <!-- good -->
+    <img alt="" src="//nomensa.com/path/to/image.png" />
     ```
