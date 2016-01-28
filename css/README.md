@@ -74,7 +74,7 @@ Our standard for writing CSS and SCSS.
 
 ### Indentation
 
-- CSS should be indented by 4 space characters.
+- Indented by 4 space characters.
 
     ```css
     /* bad */
@@ -87,6 +87,24 @@ Our standard for writing CSS and SCSS.
         z-index: 1;
     }
     ```
+
+
+### Selectors
+
+- Attribute selectors should be escaped using apostrophes.
+
+    ```scss
+    /* bad */
+    [aria-expanded=true] {
+        /* stuff */
+    }
+
+    /* good */
+    [aria-expanded='true'] {
+        /* stuff */
+    }
+    ````
+
 
 ### Properties and Values
 
