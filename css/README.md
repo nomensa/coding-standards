@@ -292,11 +292,11 @@ Our standard for writing CSS and SCSS.
 
     // good
     .block {
-        @include opacity(1);
         @extend .another-class;
+        @include opacity(1);
         // ...stuff...
 
-        @include breakpoint($mobile) {
+        @include breakpoint($tablet) {
             // ...stuff...
         }
     }
