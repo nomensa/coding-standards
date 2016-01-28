@@ -2,15 +2,15 @@
 
 ## JavaScript hooks
 
-- JavaScript hooks should be written as data-js-[comonent].
+- JavaScript hooks should be written as data-js="[component]".
 
     ```html
     <!-- bad -->
     <div class="js-accordion">
 
     <!-- bad -->
-    <div data-accordion>
+    <div data-js-accordion>
 
     <!-- good -->
-    <div data-js-accordion>
+    <div data-js="accordion clickable">
     ```
