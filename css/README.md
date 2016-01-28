@@ -88,6 +88,36 @@ Our standard for writing CSS and SCSS.
     }
     ```
 
+### Brace alignment
+
+- The opening brace should be on the same line as the selector.
+
+    ```scss
+    // bad
+    .nomensa
+    {
+        // ...stuff...
+    }
+
+    // good
+    .nomensa {
+        // ...stuff...
+    }
+    ```
+
+- The closing brace should be on a new line and at the start of the line.
+
+    ```scss
+    // bad
+    .nomensa {
+        // ...stuff... }
+
+    // good
+    .nomensa {
+        // ...stuff...
+    }
+    ```
+
 
 ### Selectors
 
