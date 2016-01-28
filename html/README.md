@@ -24,18 +24,19 @@ Our standard for writing HTML.
     <div class="component">
 
     </div><!-- .component -->
-
+    ```
 
 ## Character encoding
 
 - Pages should use the `utf-8` character encoding.
 
     ```html
-        <!-- bad -->
-        <meta charset="ISO-8859-1">
+    <!-- bad -->
+    <meta charset="ISO-8859-1">
 
-        <!-- good -->
-        <meta charset="utf-8">
+    <!-- good -->
+    <meta charset="utf-8">
+    ```
 
 
 ## URLs

@@ -82,17 +82,23 @@ Our standard for writing CSS and SCSS.
 
 ### Indentation
 
-- Indented by 4 space characters.
+- Each level should be indented by 4 space characters.
 
     ```css
     /* bad */
     .block {
-      z-index: 1;
+      /* stuff */
     }
 
     /* good */
     .block {
-        z-index: 1;
+        /* stuff */
+    }
+
+    @media only screen and (min-device-width: 768px) {
+        .block {
+            /* stuff */
+        }
     }
     ```
 
