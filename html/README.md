@@ -50,3 +50,15 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+## Conditional statements
+
+- Conditional statements that check for IE versions should be wrapped around the 'html' element.
+
+    ```html
+    <!-- bad -->
+    <!--[if IE 6]> <body> <!--![endif]-->
+
+    <!-- good -->
+    <!--[if IE 6]> <html> <!--![endif]-->
+    ```
