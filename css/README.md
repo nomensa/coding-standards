@@ -215,6 +215,15 @@ Our standard for writing CSS and SCSS.
     border-radius: 4px;
     ```
 
+- Do not use !important. It is usually indicative of a misunderstanding of CSS [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) and can lead to brittle code.
+
+    ```css
+    /* bad */
+    .block {
+        z-index: 1 !important;
+    }
+    ```
+
 
 ## SCSS
 
