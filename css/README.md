@@ -298,6 +298,9 @@ Our standard for writing CSS and SCSS.
         z-index: 1 !important;
     }
     ```
+    #### Further reading
+
+    - [Smashing Magazine: When to use important](https://www.smashingmagazine.com/2010/11/the-important-css-declaration-how-and-when-to-use-it/)
 
 - Hex colour values should be written in shorthand and lowercase.
 
