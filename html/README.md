@@ -50,3 +50,21 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+## Unnecessary attributes
+
+- Old versions of HTML meant that we had to use additional attributes to 'link', 'script' and 'style' tags.
+These are no longer necessary in HTML5.
+
+    ```html
+    <!-- bad -->
+    <link rel="stylesheet" type="text/css" media="all" href="..." />
+    <style type="text/css"> /* ...stuff... */ </style>
+    <script type="text/javascript"> // ...stuff... </script>
+
+    <!-- good -->
+    <link rel="stylesheet" href="..." />
+    <style> /* ...stuff... */ </style>
+    <script> /* ...stuff... */ </script>
+    ```
+
