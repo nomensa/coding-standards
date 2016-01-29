@@ -50,3 +50,19 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+## Indentation
+
+- HTML should be indented by 4 spaces.
+
+    ```html
+    <!-- bad -->
+    <ul>
+      <li> <!-- ...stuff... --> </li>
+    </ul>
+
+    <!-- good -->
+    <ul>
+        <li> <!-- ...stuff... --> </li>
+    </ul>
+    ```
