@@ -2,7 +2,7 @@
 
 ## Abstracting functions
 
-- Functions should be in a position that they are in a position to be reused.
+- Functions should be in a reusable position.
 
     ```javascript
     // bad
