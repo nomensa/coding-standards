@@ -354,6 +354,10 @@ Our standard for writing CSS and SCSS.
     }
     ```
 
+    #### Further reading
+
+    - [Nomensa: Text resizing tips](http://www.nomensa.com/blog/2013/text-resizing-tips)
+
 
 ## SCSS
 
