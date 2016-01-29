@@ -68,3 +68,6 @@ These are no longer necessary in HTML5.
     <script> /* ...stuff... */ </script>
     ```
 
+### Further reading
+
+- [FellowshipOne: Needless code](http://developer.fellowshipone.com/patterns/code.php#_101_needless_code)
