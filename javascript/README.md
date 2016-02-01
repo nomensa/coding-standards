@@ -304,3 +304,16 @@ Our standard for writing JavaScript.
     var foo = [],
         bar = {};
     ```
+
+## Conditional statements
+
+- Conditional statements can become difficult to read when introducing the exclamation character.
+It is important to ensure that people can read conditional statements in a natural sentence.
+
+    ```javascript
+    // bad
+    if (!condition === 0)
+
+    // good
+    if (condition !== 0)
+    ```
