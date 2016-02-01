@@ -12,6 +12,7 @@ Our standard for writing JavaScript.
 - [Functions](#functions)
 - [Statements](#statements)
 - [New instances](#new-instances)
+- [Constants](#constants)
 
 
 ## Comments
@@ -304,3 +305,25 @@ Our standard for writing JavaScript.
     var foo = [],
         bar = {};
     ```
+
+## Constants
+
+- Use a constant where the value should not change.
+Reassigning variables can introduce unforeseen logic errors and affect the readability of code.
+
+    ```javascript
+    // bad
+    var button = getElementById('.nomensa');
+
+    button = '<button> New button </button>';
+
+    // good
+    const button = getElementById('.nomensa');
+    var newButton;
+
+    newButton = '<button> New button </button>';
+    ```
+
+    ### Further reading
+
+    - [Mozilla: Const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
