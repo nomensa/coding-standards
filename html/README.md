@@ -100,3 +100,16 @@ Our standard for writing HTML.
     <!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
     <!--[if (lt IE 8)|(gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     ```
+
+
+## Attribute and property order
+
+Attribute and property should be ordered alphabetically.
+
+    ```html
+    <!-- bad -->
+    <i class="icon icon--user icon--large" aria-hidden="true" />
+
+    <!-- good -->
+    <i aria-hidden="true" class="icon icon--large icon--user" />
+    ```
