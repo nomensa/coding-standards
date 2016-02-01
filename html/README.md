@@ -72,3 +72,20 @@ Our standard for writing HTML.
     ### Further reading
 
     - [data-js selectors](https://toddmotto.com/data-js-selectors-enhancing-html5-development-by-separating-css-from-javascript/)
+
+
+## Indentation
+
+- HTML should be indented by 4 spaces.
+
+    ```html
+    <!-- bad -->
+    <ul>
+      <li><!-- ...stuff... --></li>
+    </ul>
+
+    <!-- good -->
+    <ul>
+        <li><!-- ...stuff... --></li>
+    </ul>
+    ```
