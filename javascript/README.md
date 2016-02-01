@@ -145,6 +145,11 @@ Our standard for writing JavaScript.
     if (foo === bar) {}
     ```
 
+    ### Further reading
+
+    - [Mozilla: Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+
 ## Strings
 
 - Strings should be escaped using the apostrophe character
