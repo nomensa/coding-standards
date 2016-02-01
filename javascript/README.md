@@ -145,6 +145,11 @@ Our standard for writing JavaScript.
     if (foo === bar) {}
     ```
 
+    ### Further reading
+
+    - [Mozilla: Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+
 ## Strings
 
 - Strings should be escaped using the apostrophe character
@@ -286,6 +291,7 @@ Our standard for writing JavaScript.
     }
     ```
 
+
 ## New instances
 
 - New instances of arrays and objects should be written as shorthand:
@@ -298,4 +304,18 @@ Our standard for writing JavaScript.
     // good
     var foo = [],
         bar = {};
+    ```
+
+
+## Conditional statements
+
+- Conditional statements can become difficult to read when introducing the exclamation character.
+It is important to ensure that people can read conditional statements in a natural sentence.
+
+    ```javascript
+    // bad
+    if (!condition === 0)
+
+    // good
+    if (condition !== 0)
     ```

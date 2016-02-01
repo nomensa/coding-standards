@@ -46,6 +46,10 @@ Our standard for writing SCSS.
     }
     ```
 
+    #### Further reading
+
+    - [Nomensa: Text resizing tips](http://www.nomensa.com/blog/2013/text-resizing-tips)
+
 
 ## Nesting depth
 

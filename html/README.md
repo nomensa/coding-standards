@@ -5,26 +5,41 @@ Our standard for writing HTML.
 
 ## Table of Contents
 
-- [Comments](#comments)
+- [Indentation](#indentation)
+- [Conditional statements](#conditional-statements)
 - [Character encoding](#character-encoding)
-- [URLs](#urls)
+- [Comments](#comments)
+- [Attributes](#attributes)
+- [Properties](#properties)
 - [JavaScript hooks](#javascript-hooks)
+- [URLs](#urls)
 
 
-## Commments
+## Indentation
 
-- HTML comments should be used to indicate where a component ends.
+- HTML should be indented by 4 spaces.
 
     ```html
     <!-- bad -->
-    <div class="component">
-
-    </div>
+    <ul>
+      <li><!-- ...stuff... --></li>
+    </ul>
 
     <!-- good -->
-    <div class="component">
+    <ul>
+        <li><!-- ...stuff... --></li>
+    </ul>
 
-    </div><!-- .component -->
+
+## Conditional statements
+
+- Conditional statements that check for IE versions should be wrapped around the 'html' element.
+
+    ```html
+    <!-- good -->
+    <!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+    <!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+    <!--[if (lt IE 8)|(gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     ```
 
 ## Character encoding
@@ -40,16 +55,76 @@ Our standard for writing HTML.
     ```
 
 
-## URLs
+## Comments
 
-- URLs should not contain the protocol. URLs should be relative to avoid https security warnings.
+- HTML comments should be used to indicate where a component ends.
 
     ```html
     <!-- bad -->
-    <img alt="" src="http://example.com/path/to/image.png" />
+    <div class="component">
+
+    </div>
 
     <!-- good -->
-    <img alt="" src="//example.com/path/to/image.png" />
+    <div class="component">
+
+    </div><!-- .component -->
+    ```
+
+
+## Attributes
+
+- Attributes should be ordered alphabetically.
+
+    ```html
+    <!-- bad -->
+    <div id="nomensa" class="nomensa" aria-describedby="foo" />
+
+    <!-- good -->
+    <div aria-describedby="foo" class="nomensa" id="nomensa" />
+    ```
+
+- Attributes should use double quotes.
+
+    ```html
+    <!-- bad -->
+    <div class='nomensa'>
+
+    <!-- good -->
+    <div class="nomensa">
+    ```
+
+- Attributes should be written in lower case.
+
+    ```html
+    <!-- bad -->
+    <div CLASS='nomensa'>
+
+    <!-- good -->
+    <div class="nomensa">
+    ```
+
+- Boolean attributes should not contain values.
+
+    ```html
+    <!-- bad -->
+    <input checked="checked" type="checkbox" />
+
+    <!-- good -->
+    <input checked type="checkbox" />
+    ```
+
+
+## Properties
+
+- Attribute and property should be ordered alphabetically.
+
+    ```html
+    <!-- bad -->
+    <i class="icon icon--user icon--large" />
+
+    <!-- good -->
+    <i class="icon icon--large icon--user" />
     ```
 
 
@@ -74,18 +149,14 @@ Our standard for writing HTML.
     - [data-js selectors](https://toddmotto.com/data-js-selectors-enhancing-html5-development-by-separating-css-from-javascript/)
 
 
-## Indentation
+## URLs
 
-- HTML should be indented by 4 spaces.
+- URLs should not contain the protocol. URLs should be relative to avoid https security warnings.
 
     ```html
     <!-- bad -->
-    <ul>
-      <li><!-- ...stuff... --></li>
-    </ul>
+    <img alt="" src="http://example.com/path/to/image.png" />
 
     <!-- good -->
-    <ul>
-        <li><!-- ...stuff... --></li>
-    </ul>
+    <img alt="" src="//example.com/path/to/image.png" />
     ```
