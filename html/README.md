@@ -88,4 +88,15 @@ Our standard for writing HTML.
     <ul>
         <li><!-- ...stuff... --></li>
     </ul>
+
+
+## Conditional statements
+
+- Conditional statements that check for IE versions should be wrapped around the 'html' element.
+
+    ```html
+    <!-- good -->
+    <!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+    <!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+    <!--[if (lt IE 8)|(gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     ```
