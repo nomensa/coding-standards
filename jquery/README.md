@@ -5,6 +5,7 @@ Our standard for writing jQuery.
 ## Table of contents
 
 - [Chaining](#chaining)
+- [Plugins](#plugins)
 
 
 ## Chaining
@@ -29,3 +30,23 @@ Our standard for writing jQuery.
     ### Further reading
 
     [jQuery.org: Chained method calls](https://contribute.jquery.org/style-guide/js/#chained-method-calls)
+
+
+## Plugins
+
+- Plugins should not create global variables. This excludes third party libraries.
+
+    ```javascript
+    // bad
+    var plugin = 'nomensa';
+
+    (function ($, window, document, undefined) {
+        // ...stuff...
+    });
+
+    // good
+    (function ($, window, document, undefined) {
+        var plugin = 'nomensa';
+        // ...stuff...
+    });
+    ```
