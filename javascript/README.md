@@ -291,6 +291,7 @@ Our standard for writing JavaScript.
     }
     ```
 
+
 ## New instances
 
 - New instances of arrays and objects should be written as shorthand:
@@ -304,6 +305,7 @@ Our standard for writing JavaScript.
     var foo = [],
         bar = {};
     ```
+
 
 ## Conditional statements
 
