@@ -12,6 +12,7 @@ Our standard for writing JavaScript.
 - [Functions](#functions)
 - [Statements](#statements)
 - [New instances](#new-instances)
+- [Conditional statements](#conditional-statements)
 
 
 ## Comments
@@ -22,20 +23,18 @@ Our standard for writing JavaScript.
     // bad
     const active = true;  // is current tab
 
+    function getType() {
+      console.log('fetching type...');
+      // set the default type to 'no type'
+      const type = this._type || 'no type';
+
+      return type;
+    }
+
     // good
     // is current tab
     const active = true;
 
-    // bad
-    function getType() {
-      console.log('fetching type...');
-      // set the default type to 'no type'
-      const type = this._type || 'no type';
-
-      return type;
-    }
-
-    // good
     function getType() {
       console.log('fetching type...');
 
@@ -45,7 +44,6 @@ Our standard for writing JavaScript.
       return type;
     }
 
-    // also good
     function getType() {
       // set the default type to 'no type'
       const type = this._type || 'no type';
@@ -114,8 +112,7 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     var foo_and_bar;
-    // bad
-    var foo-and-bar;
+        foo-and-bar;
 
     // good
     var fooAndBar;
@@ -174,24 +171,18 @@ Our standard for writing JavaScript.
     function foo(bar) {}
     ```
 
-- *Default*: There shall be no space from the function name and left bracket character.
+- There shall be no space from the function name and left bracket character.
 
     ```javascript
     // bad
     function foo (bar) {}
 
+    fooElement.onclick = function () {}
+
     // good
     function foo(bar) {}
-    ```
 
-- *Anonymous function*: There shall be one space from the function name and left bracket character.
-
-    ```javascript
-    // bad
     fooElement.onclick = function() {}
-
-    // good
-    fooElement.onclick = function () {}
     ```
 
 - Variables that are passed to and from functions should be descriptive.
@@ -294,7 +285,7 @@ Our standard for writing JavaScript.
 
 ## New instances
 
-- New instances of arrays and objects should be written as shorthand:
+- New instances of arrays and objects should be written as shorthand.
 
     ```javascript
     // bad
@@ -309,8 +300,7 @@ Our standard for writing JavaScript.
 
 ## Conditional statements
 
-- Conditional statements can become difficult to read when introducing the exclamation character.
-It is important to ensure that people can read conditional statements in a natural sentence.
+- Conditional statements can become difficult to read when introducing the exclamation character. It is important to ensure that people can read conditional statements in a natural sentence.
 
     ```javascript
     // bad

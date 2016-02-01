@@ -6,6 +6,9 @@ Our standard for writing jQuery.
 
 - [Chaining](#chaining)
 - [Plugins](#plugins)
+- [Efficient selectors](#efficient-selectors)
+- [Absent elements](#absent-elements)
+- [Caching in loops](#caching-in-loops)
 
 
 ## Chaining
@@ -90,7 +93,7 @@ Our standard for writing jQuery.
     - [jQuery.com: Avoid the Universal Selector](http://learn.jquery.com/performance/optimize-selectors/#avoid-the-universal-selectory)
 
 
-## Assume absent elements
+## Absent elements
 
 - Prevent code from executing if the object being manipulated does not exist.
 
