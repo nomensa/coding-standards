@@ -88,3 +88,26 @@ Our standard for writing jQuery.
     ### Further reading
 
     - [jQuery.com: Avoid the Universal Selector](http://learn.jquery.com/performance/optimize-selectors/#avoid-the-universal-selectory)
+
+
+## Assume absent elements
+
+- Prevent code from executing if the object being manipulated does not exist.
+
+    ```javascript
+    // bad
+    var nomensa = $('nomensa');
+
+    nomensa.hide();
+
+    // good
+    var nomensa = $('nomensa');
+
+    if (nomensa.length !== 0) {
+        nomensa.hide();
+    }
+    ```
+
+    ### Further reading
+
+    - [jQuery.com: Absent Elements](http://learn.jquery.com/performance/dont-act-on-absent-elements/)
