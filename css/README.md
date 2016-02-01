@@ -5,13 +5,12 @@ Our standard for writing CSS.
 
 ## Table of Contents
 
-- [CSS](#css)
- - [BEM class naming](#bem-class-naming)
- - [Indentation](#indentation)
- - [Brace alignment](#brace-alignment)
- - [Selectors](#selectors)
- - [Properties and Values](#properties-and-values)
- - [Container heights](#container-heights)
+- [BEM class naming](#bem-class-naming)
+- [Indentation](#indentation)
+- [Brace alignment](#brace-alignment)
+- [Selectors](#selectors)
+- [Properties and Values](#properties-and-values)
+- [Container heights](#container-heights)
 
 
 ## BEM class naming

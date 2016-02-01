@@ -5,11 +5,10 @@ Our standard for writing SCSS.
 
 ## Table of Contents
 
-- [SCSS](#scss)
- - [Comments](#comments)
- - [Sizing](#sizing)
- - [Nesting depth](#nesting-depth)
- - [Extend and Include](#extend-and-include)
+- [Comments](#comments)
+- [Sizing](#sizing)
+- [Nesting depth](#nesting-depth)
+- [Extend and Include](#extend-and-include)
 
 
 ## Comments
