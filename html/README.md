@@ -8,6 +8,7 @@ Our standard for writing HTML.
 - [Comments](#comments)
 - [Character encoding](#character-encoding)
 - [URLs](#urls)
+- [JavaScript hooks](#javascript-hooks)
 
 
 ## Commments
@@ -54,15 +55,20 @@ Our standard for writing HTML.
 
 ## JavaScript hooks
 
-- JavaScript hooks should be written as data-js="[component]".
+- JavaScript hooks should be written using a data-js attribute on the element.
 
     ```html
     <!-- bad -->
     <div class="js-accordion">
 
-    <!-- bad -->
     <div data-js-accordion>
 
     <!-- good -->
+    <div data-js="accordion">
+
     <div data-js="accordion clickable">
     ```
+
+    ### Further reading
+
+    - [data-js selectors](https://toddmotto.com/data-js-selectors-enhancing-html5-development-by-separating-css-from-javascript/)
