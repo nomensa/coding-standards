@@ -43,3 +43,4 @@
 
 ### Further reading
 - [jQuery.org: Type checks](https://contribute.jquery.org/style-guide/js/#type-checks)
+- [Understanding JavaScript types](https://toddmotto.com/understanding-javascript-types-and-reliable-type-checking)
