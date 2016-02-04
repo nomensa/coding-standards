@@ -6,6 +6,7 @@ Our standard for writing JavaScript.
 ## Table of Contents
 
 - [Comments](#comments)
+- [Type checks](#type-checks)
 - [Variables](#variables)
 - [Strict mode](#strict-mode)
 - [Strings](#strings)
@@ -80,6 +81,39 @@ Our standard for writing JavaScript.
     }
     ```
 
+
+## Type checks
+
+- Checking for the type of string, number, boolean etc. should be consistent. Additional type checks are available using [jQuery](../jquery/#type-checks).
+
+    ```javascript
+    // String
+    typeof object === 'string'
+
+    // Number
+    typeof object === 'number'
+
+    // Boolean
+    typeof object === 'boolean'
+
+    // Object
+    typeof object === 'object'
+
+    // Element
+    object.nodeType
+
+    // Null
+    object === null
+
+    // Undefined
+    typeof variable === 'undefined'
+    ```
+
+    ### Further reading
+    - [MDN typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+    - [Understanding JavaScript types](https://toddmotto.com/understanding-javascript-types-and-reliable-type-checking)
+
+
 ## Variables
 
 - Variables should always be declared at the top of functions.
@@ -128,6 +162,7 @@ Our standard for writing JavaScript.
     var element;
     ```
 
+
 ## Strict mode
 
 - Strict mode should be enabled at the top of each JS file.
@@ -158,6 +193,7 @@ Our standard for writing JavaScript.
     // good
     var foo = 'foo';
     ```
+
 
 ## Functions
 
@@ -210,6 +246,7 @@ Our standard for writing JavaScript.
         var bar = 'foo'
     }
     ```
+
 
 ## Statements
 

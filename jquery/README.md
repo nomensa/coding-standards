@@ -4,11 +4,28 @@ Our standard for writing jQuery.
 
 ## Table of contents
 
+- [Type checks](#type-checks)
 - [Chaining](#chaining)
 - [Plugins](#plugins)
 - [Efficient selectors](#efficient-selectors)
 - [Absent elements](#absent-elements)
 - [Caching in loops](#caching-in-loops)
+
+
+## Type checks
+
+- Checking for the type of object using jQuery should be consistent. Additional type checks are available using [JavaScript](../javascript/#type-checks).
+
+    ```javascript
+    // Function
+    jQuery.isFunction(object)
+
+    // Array
+    jQuery.isArray(object)
+    ```
+
+    ### Further reading
+    - [jQuery.org: Type checks](https://contribute.jquery.org/style-guide/js/#type-checks)
 
 
 ## Chaining
