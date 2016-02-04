@@ -10,6 +10,7 @@ Our standard for writing jQuery.
 - [Efficient selectors](#efficient-selectors)
 - [Absent elements](#absent-elements)
 - [Caching in loops](#caching-in-loops)
+- [Ajax](#ajax)
 
 
 ## Type checks
@@ -157,7 +158,8 @@ Our standard for writing jQuery.
 
     - [jQuery.com: Cache loop length](http://learn.jquery.com/performance/cache-loop-length/)
 
-## Ajax for all
+
+## Ajax
 
 - Use the 'ajax' method instead of 'get', 'getJSON' and 'post'. The 'ajax' method can be used for all requests.
 
