@@ -156,3 +156,22 @@ Our standard for writing jQuery.
     ### Further reading
 
     - [jQuery.com: Cache loop length](http://learn.jquery.com/performance/cache-loop-length/)
+
+## Ajax for all
+
+- Use the 'ajax' method instead of 'get', 'getJSON' and 'post'. The 'ajax' method can be used for all requests.
+
+    ```javascript
+        // bad
+        $.get('path/to/file.html', callback());
+
+        // good
+        $.ajax({
+            type: 'GET',
+            url: 'path/to/file.html'
+        });
+    ```
+
+    ### Further reading
+
+    - [Envato Tuts: jQuery best practices](http://code.tutsplus.com/tutorials/14-helpful-jquery-tricks-notes-and-best-practices--net-14405)
