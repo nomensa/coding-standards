@@ -8,7 +8,8 @@ Logic errors can occur if markup contains the trailing HTML comment, as jQuery w
 
     ```javascript
     // bad
-    var markup = '<div class="component"> </div> <!-- .component -->";
+    var markup = '<div class="component"> </div> <!-- .component -->';
 
     // good
-    var markup = '<div class="component"> </div>";
+    var markup = '<div class="component"> </div>';
+    ```
