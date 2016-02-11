@@ -29,6 +29,26 @@
                     });
                 });
             });
+
+            // good
+            beforeEach(function() {
+                var testElement = $('.markup');
+            });
+
+            it('should do foo');
+
+            // ... Many lines later ...
+
+            describe('options', function() {
+
+                it('should run the callback', function() {
+                    testElement.plugin({
+                        callback: function() {
+                            console.log('this will run');
+                        }
+                    });
+                });
+            });
         ```
     In this example, we can recognise good and bad points. The bad unfortunately outweigh the good:
     - (Good): The beforeEach function efficiently initiates the plugin for each test condition.
