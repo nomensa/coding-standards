@@ -9,6 +9,20 @@ Coding standards for development.
 - [jQuery](./jquery/)
 
 
+## Guiding principles
+
+- Mobile first.
+
+    Create your styles for the smallest device first and then progress to larger devices.
+    This creates advantages for both developer and user:
+     - CSS is inherited in larger devices without duplication of code;
+     - Mobile devices will only load resources necessary for the device.
+
+    ### Further reading
+
+    - [LukeW: Mobile first](http://www.lukew.com/resources/mobile_first.asp)
+
+
 ## References
 
 These coding standards wouldn't have been possible without the great work from the following sources:
