@@ -5,12 +5,57 @@ Our standard for writing HTML.
 
 ## Table of Contents
 
-- [Comments](#comments)
+- [Indentation](#indentation)
+- [Conditional statements](#conditional-statements)
 - [Character encoding](#character-encoding)
+- [Comments](#comments)
+- [Attributes](#attributes)
+- [Properties](#properties)
+- [JavaScript hooks](#javascript-hooks)
 - [URLs](#urls)
 
 
-## Commments
+## Indentation
+
+- HTML should be indented by 4 spaces.
+
+    ```html
+    <!-- bad -->
+    <ul>
+      <li><!-- ...stuff... --></li>
+    </ul>
+
+    <!-- good -->
+    <ul>
+        <li><!-- ...stuff... --></li>
+    </ul>
+
+
+## Conditional statements
+
+- Conditional statements that check for IE versions should be wrapped around the 'html' element.
+
+    ```html
+    <!-- good -->
+    <!--[if IE 8]><html lang="en" class="ie8"><![endif]-->
+    <!--[if IE 9]><html lang="en" class="ie9"><![endif]-->
+    <!--[if (lt IE 8)|(gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+    ```
+
+## Character encoding
+
+- Pages should use the `utf-8` character encoding.
+
+    ```html
+    <!-- bad -->
+    <meta charset="ISO-8859-1">
+
+    <!-- good -->
+    <meta charset="utf-8">
+    ```
+
+
+## Comments
 
 - HTML comments should be used to indicate where a component ends.
 
@@ -26,17 +71,82 @@ Our standard for writing HTML.
     </div><!-- .component -->
     ```
 
-## Character encoding
 
-- Pages should use the `utf-8` character encoding.
+## Attributes
+
+- Attributes should be ordered alphabetically.
 
     ```html
     <!-- bad -->
-    <meta charset="ISO-8859-1">
+    <div id="nomensa" class="nomensa" aria-describedby="foo" />
 
     <!-- good -->
-    <meta charset="utf-8">
+    <div aria-describedby="foo" class="nomensa" id="nomensa" />
     ```
+
+- Attributes should use double quotes.
+
+    ```html
+    <!-- bad -->
+    <div class='nomensa'>
+
+    <!-- good -->
+    <div class="nomensa">
+    ```
+
+- Attributes should be written in lower case.
+
+    ```html
+    <!-- bad -->
+    <div CLASS='nomensa'>
+
+    <!-- good -->
+    <div class="nomensa">
+    ```
+
+- Boolean attributes should not contain values.
+
+    ```html
+    <!-- bad -->
+    <input checked="checked" type="checkbox" />
+
+    <!-- good -->
+    <input checked type="checkbox" />
+    ```
+
+
+## Properties
+
+- Attribute and property should be ordered alphabetically.
+
+    ```html
+    <!-- bad -->
+    <i class="icon icon--user icon--large" />
+
+    <!-- good -->
+    <i class="icon icon--large icon--user" />
+    ```
+
+
+## JavaScript hooks
+
+- JavaScript hooks should be written using a data-js attribute on the element.
+
+    ```html
+    <!-- bad -->
+    <div class="js-accordion">
+
+    <div data-js-accordion>
+
+    <!-- good -->
+    <div data-js="accordion">
+
+    <div data-js="accordion clickable">
+    ```
+
+    ### Further reading
+
+    - [data-js selectors](https://toddmotto.com/data-js-selectors-enhancing-html5-development-by-separating-css-from-javascript/)
 
 
 ## URLs

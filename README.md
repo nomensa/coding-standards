@@ -1,10 +1,11 @@
 # Coding standards
 
-Coding standards for development
+Coding standards for development.
 
 - [HTML](./html/)
-- [CSS / SCSS](./css/)
+- [CSS](./css/)
 - [JavaScript](./javascript/)
+- [SCSS](./scss/)
 
 
 ## References
