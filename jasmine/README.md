@@ -50,7 +50,6 @@
                 });
             });
         ```
-    In the *bad* example, we can recognise good and bad points. The bad unfortunately outweigh the good:
+    In the *bad* example, we can recognise good and bad points.
     - (Good): The beforeEach function efficiently initiates the plugin for each test condition.
-    - (Bad): Current and future developers will have to remember to check the beforeEach function.
-    - (Bad): Circumventing the bottle-neck will either involve refactoring a lot of code, or repeating code.
+    - (Bad): Current and future developers will have to remember to check the beforeEach function for each condition.
