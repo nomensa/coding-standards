@@ -8,6 +8,7 @@ Our standard for writing HTML.
 - [Comments](#comments)
 - [Character encoding](#character-encoding)
 - [URLs](#urls)
+- [Tags](#tags)
 
 
 ## Commments
@@ -55,6 +56,7 @@ Our standard for writing HTML.
 ## Tags
 
 - HTML tags should be self closed where appropriate.
+The forward slash at the end of the tag is not necessary in HTML5, but it helps readability.
 
     ```html
     <!-- bad -->
@@ -63,3 +65,7 @@ Our standard for writing HTML.
     <!-- good -->
     <link />
     ```
+
+    ### Further reading
+
+    - [Treehouse: Close tags in HTML5](http://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5)
