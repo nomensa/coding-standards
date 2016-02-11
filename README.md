@@ -19,6 +19,10 @@ Coding standards for development.
 
 Each one is as important the next and focusing on just one can detriment the other.
 
+### Further reading
+ - [C2.com: Dry](http://c2.com/cgi/wiki?DontRepeatYourself)
+ - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
+
 ## References
 
 These coding standards wouldn't have been possible without the great work from the following sources:
