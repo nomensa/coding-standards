@@ -2,23 +2,33 @@
 
 ## Abstracting functions
 
-- Functions should be in a reusable position.
+- Functions used within jQuery methods should be abstracted into one place.
+There can be two advantages from this:
+1. It encourages functions to be re-used without the burden of refactoring them;
+2. Improves readability.
+
 
     ```javascript
     // bad
-    var link $('.link');
+    var link = $('.link'),
+        button = $('.button');
 
     link.click(function() {
         // ...stuff...
     });
 
-    // good
-    var link $('.link'),
-        linkEvent = function () {
-            // ...stuff...
-        };
-
-    link.click(function() {
-        linkEvent;
+    button.click(function() {
+        // ...the same stuff...
     });
+
+    // good
+    var link = $('.link'),
+        button = $('.button');
+
+    function event() {
+        // ...stuff...
+    }
+
+    link.click(event);
+    button.click(event);
     ```
