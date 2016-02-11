@@ -145,3 +145,30 @@ Our standard for writing SCSS.
         }
     }
     ```
+
+
+## Variables
+
+- Use hyphenated variables with clear and descriptive names.
+
+    ```scss
+    // bad
+    $brandColor: #f00;
+    $brand_color: #f00;
+    $brd-clr: #f00;
+
+    // good
+    $brand-color: #f00;
+    ```
+
+- Global variables should be defined in a `_vars.scss` file.
+
+- Component specific variables should be defined at the top of the relavant SCSS file and be prefixed with the component name.
+
+    ```scss
+    // bad
+    $background-color: #f00;
+
+    // good
+    $foobar-background-color: #f00;
+    ```

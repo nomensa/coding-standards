@@ -6,12 +6,14 @@ Our standard for writing JavaScript.
 ## Table of Contents
 
 - [Comments](#comments)
+- [Type checks](#type-checks)
 - [Variables](#variables)
 - [Strict mode](#strict-mode)
 - [Strings](#strings)
 - [Functions](#functions)
 - [Statements](#statements)
 - [New instances](#new-instances)
+- [Conditional statements](#conditional-statements)
 
 
 ## Comments
@@ -22,20 +24,18 @@ Our standard for writing JavaScript.
     // bad
     const active = true;  // is current tab
 
+    function getType() {
+      console.log('fetching type...');
+      // set the default type to 'no type'
+      const type = this._type || 'no type';
+
+      return type;
+    }
+
     // good
     // is current tab
     const active = true;
 
-    // bad
-    function getType() {
-      console.log('fetching type...');
-      // set the default type to 'no type'
-      const type = this._type || 'no type';
-
-      return type;
-    }
-
-    // good
     function getType() {
       console.log('fetching type...');
 
@@ -45,7 +45,6 @@ Our standard for writing JavaScript.
       return type;
     }
 
-    // also good
     function getType() {
       // set the default type to 'no type'
       const type = this._type || 'no type';
@@ -82,6 +81,39 @@ Our standard for writing JavaScript.
     }
     ```
 
+
+## Type checks
+
+- Checking for the type of string, number, boolean etc. should be consistent. Additional type checks are available using [jQuery](../jquery/#type-checks).
+
+    ```javascript
+    // String
+    typeof object === 'string'
+
+    // Number
+    typeof object === 'number'
+
+    // Boolean
+    typeof object === 'boolean'
+
+    // Object
+    typeof object === 'object'
+
+    // Element
+    object.nodeType
+
+    // Null
+    object === null
+
+    // Undefined
+    typeof variable === 'undefined'
+    ```
+
+    ### Further reading
+    - [MDN typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+    - [Understanding JavaScript types](https://toddmotto.com/understanding-javascript-types-and-reliable-type-checking)
+
+
 ## Variables
 
 - Variables should always be declared at the top of functions.
@@ -114,8 +146,7 @@ Our standard for writing JavaScript.
     ```javascript
     // bad
     var foo_and_bar;
-    // bad
-    var foo-and-bar;
+        foo-and-bar;
 
     // good
     var fooAndBar;
@@ -130,6 +161,7 @@ Our standard for writing JavaScript.
     // good
     var element;
     ```
+
 
 ## Strict mode
 
@@ -162,6 +194,7 @@ Our standard for writing JavaScript.
     var foo = 'foo';
     ```
 
+
 ## Functions
 
 - There shall be no space between the left and right bracket characters.
@@ -174,24 +207,18 @@ Our standard for writing JavaScript.
     function foo(bar) {}
     ```
 
-- *Default*: There shall be no space from the function name and left bracket character.
+- There shall be no space from the function name and left bracket character.
 
     ```javascript
     // bad
     function foo (bar) {}
 
+    fooElement.onclick = function () {}
+
     // good
     function foo(bar) {}
-    ```
 
-- *Anonymous function*: There shall be one space from the function name and left bracket character.
-
-    ```javascript
-    // bad
     fooElement.onclick = function() {}
-
-    // good
-    fooElement.onclick = function () {}
     ```
 
 - Variables that are passed to and from functions should be descriptive.
@@ -219,6 +246,7 @@ Our standard for writing JavaScript.
         var bar = 'foo'
     }
     ```
+
 
 ## Statements
 
@@ -294,7 +322,7 @@ Our standard for writing JavaScript.
 
 ## New instances
 
-- New instances of arrays and objects should be written as shorthand:
+- New instances of arrays and objects should be written as shorthand.
 
     ```javascript
     // bad
@@ -309,8 +337,7 @@ Our standard for writing JavaScript.
 
 ## Conditional statements
 
-- Conditional statements can become difficult to read when introducing the exclamation character.
-It is important to ensure that people can read conditional statements in a natural sentence.
+- Conditional statements can become difficult to read when introducing the exclamation character. It is important to ensure that people can read conditional statements in a natural sentence.
 
     ```javascript
     // bad
