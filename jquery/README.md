@@ -1,5 +1,6 @@
 # jQuery
 
+-Our standard for writing jQuery.
 
 ## Table of contents
 
@@ -134,7 +135,7 @@
     - [jQuery.com: Absent Elements](http://learn.jquery.com/performance/dont-act-on-absent-elements/)
 
 
-# Caching in loops
+## Caching in loops
 
 - Properties used in conditions for loops should be cached beforehand.
 
