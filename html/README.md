@@ -13,6 +13,7 @@ Our standard for writing HTML.
 - [Properties](#properties)
 - [JavaScript hooks](#javascript-hooks)
 - [URLs](#urls)
+- [Tags](#tags)
 
 
 ## Indentation
@@ -161,3 +162,21 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
+
+
+## Tags
+
+- HTML tags should be self closed where appropriate.
+The forward slash at the end of the tag is not necessary in HTML5, but it helps readability.
+
+    ```html
+    <!-- bad -->
+    <link></link>
+
+    <!-- good -->
+    <link />
+    ```
+
+    ### Further reading
+
+    - [Treehouse: Close tags in HTML5](http://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5)
