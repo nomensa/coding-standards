@@ -8,6 +8,16 @@ Coding standards for development.
 - [JavaScript](./javascript/)
 - [jQuery](./jquery/)
 
+## Guiding principles
+
+- Progressive enhancement.
+Webpages should first work as plain HTML. A larger audience can read content inside of HTML, compared to CSS and JS.
+Technologies such as CSS and JS can be layered on top of HTML to enhance the user experience.
+
+### Further reading
+
+  - [Gov UK: Progressive enhancement](https://www.gov.uk/service-manual/making-software/progressive-enhancement.html)
+
 
 ## Guiding principles
 
