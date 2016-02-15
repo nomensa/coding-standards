@@ -226,12 +226,12 @@ Our standard for writing JavaScript.
 
     ```javascript
     // bad
-    fooElement.addEventListener('click', function(e){
+    fooElement.addEventListener('click', function(e) {
         // ...stuff...
     });
 
     // good
-    fooElement.addEventListener.click('click', function(event){
+    fooElement.addEventListener('click', function(event) {
         // ...stuff...
     });
     ```

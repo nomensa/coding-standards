@@ -1,6 +1,6 @@
 # Coding standards
 
-Coding standards for development.
+This is the living document that is [Nomensa's](http://www.nomensa.com/) front-end coding standards. They are formed from various sources including our own preferred approach to front-end development.
 
 - [HTML](./html/)
 - [CSS](./css/)
@@ -46,10 +46,10 @@ Each one is as important the next and focusing on just one can detriment the oth
 
 ## References
 
-These coding standards wouldn't have been possible without the great work from the following sources:
+These coding standards have been inspired by great work from the following sources:
 
-- [airbnb javascript](https://github.com/airbnb/javascript)
 - [airbnb css](https://github.com/airbnb/css)
+- [airbnb javascript](https://github.com/airbnb/javascript)
 - [Learn jQuery](http://learn.jquery.com/)
-- [Smashing Magazine](https://www.smashingmagazine.com)
 - [Mozilla Developer Network](https://developer.mozilla.org/)
+- [Smashing Magazine](https://www.smashingmagazine.com)
