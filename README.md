@@ -45,7 +45,7 @@ Each one is as important the next and focusing on just one can detriment the oth
 
 ## References
 
-These coding standards have been inspired by the great work from the following sources:
+These coding standards have been inspired by great work from the following sources:
 
 - [airbnb css](https://github.com/airbnb/css)
 - [airbnb javascript](https://github.com/airbnb/javascript)
