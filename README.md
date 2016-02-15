@@ -1,6 +1,6 @@
 # Coding standards
 
-These are the living document that is [Nomensa's](http://www.nomensa.com/) front-end coding standards. They are formed from various sources and our own preferred approach to writing front-end code.
+This is the living document that is [Nomensa's](http://www.nomensa.com/) front-end coding standards. They are formed from various sources including our own preferred approaches for front-end development.
 
 - [HTML](./html/)
 - [CSS](./css/)
