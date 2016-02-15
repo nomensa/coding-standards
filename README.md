@@ -8,6 +8,20 @@ Coding standards for development.
 - [JavaScript](./javascript/)
 - [jQuery](./jquery/)
 
+## Guiding principles
+
+- DRY: Don't repeat yourself.
+  Try to refactor code so that it is not repeated.
+  Repeating code can affect the following aspects of the code:
+  - Maintainability;
+  - Readability;
+  - Efficiency.
+
+Each one is as important the next and focusing on just one can detriment the other.
+
+### Further reading
+ - [C2.com: Dry](http://c2.com/cgi/wiki?DontRepeatYourself)
+ - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
 
 ## Guiding principles
 
