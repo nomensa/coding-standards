@@ -8,26 +8,15 @@ Coding standards for development.
 - [JavaScript](./javascript/)
 - [jQuery](./jquery/)
 
-## Guiding principles
-
-- DRY: Don't repeat yourself.
-  Try to refactor code so that it is not repeated.
-  Repeating code can affect the following aspects of the code:
-  - Maintainability;
-  - Readability;
-  - Efficiency.
-
-Each one is as important the next and focusing on just one can detriment the other.
-
-### Further reading
- - [C2.com: Dry](http://c2.com/cgi/wiki?DontRepeatYourself)
- - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
 
 ## Guiding principles
 
 - Progressive enhancement.
 
     Webpages should first work as plain HTML. A larger audience can read content inside of HTML, compared to CSS and JS. Technologies such as CSS and JS can be layered on top of HTML to enhance the user experience.
+
+    ### Further reading
+    - [Gov UK: Progressive enhancement](https://www.gov.uk/service-manual/making-software/progressive-enhancement.html)
 
 - Mobile first.
 
@@ -36,8 +25,20 @@ Each one is as important the next and focusing on just one can detriment the oth
      - Mobile devices will only load resources necessary for the device.
 
     ### Further reading
-    - [Gov UK: Progressive enhancement](https://www.gov.uk/service-manual/making-software/progressive-enhancement.html)
     - [LukeW: Mobile first](http://www.lukew.com/resources/mobile_first.asp)
+
+- DRY: Don't repeat yourself.
+
+    Try to refactor code so that it is not repeated. Repeating code can affect the following aspects of the code:
+    - Maintainability
+    - Readability
+    - Efficiency
+
+    Each one is as important the next and focusing on just one can detriment the other.
+
+    ### Further reading
+    - [C2.com: Dry](http://c2.com/cgi/wiki?DontRepeatYourself)
+    - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
 
 
 ## References
