@@ -40,6 +40,7 @@ Each one is as important the next and focusing on just one can detriment the oth
 
 #### Further reading
 - [C2.com: Dry](http://c2.com/cgi/wiki?DontRepeatYourself)
+- [jQuery.com: Keep Things DRY](http://learn.jquery.com/code-organization/dont-repeat-yourself/)
 - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
 
 
