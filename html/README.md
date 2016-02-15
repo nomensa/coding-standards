@@ -9,11 +9,11 @@ Our standard for writing HTML.
 - [Conditional statements](#conditional-statements)
 - [Character encoding](#character-encoding)
 - [Comments](#comments)
+- [Tags](#tags)
 - [Attributes](#attributes)
 - [Properties](#properties)
 - [JavaScript hooks](#javascript-hooks)
 - [URLs](#urls)
-- [Tags](#tags)
 
 
 ## Indentation
@@ -50,10 +50,10 @@ Our standard for writing HTML.
 
     ```html
     <!-- bad -->
-    <meta charset="ISO-8859-1">
+    <meta charset="ISO-8859-1" />
 
     <!-- good -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     ```
 
 
@@ -74,16 +74,37 @@ Our standard for writing HTML.
     ```
 
 
+## Tags
+
+- HTML tags should be self-closed. The forward slash at the end of the tag aids readability - even for HTML5 self-closing tags.
+
+    ```html
+    <!-- bad -->
+    <link>
+    <hr>
+    <br>
+
+    <!-- good -->
+    <link />
+    <hr />
+    <br />
+    ```
+
+    ### Further reading
+
+    - [Treehouse: Close tags in HTML5](http://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5)
+
+
 ## Attributes
 
 - Attributes should be ordered alphabetically.
 
     ```html
     <!-- bad -->
-    <div id="nomensa" class="nomensa" aria-describedby="foo" />
+    <div id="nomensa" class="nomensa" aria-describedby="foo">
 
     <!-- good -->
-    <div aria-describedby="foo" class="nomensa" id="nomensa" />
+    <div aria-describedby="foo" class="nomensa" id="nomensa">
     ```
 
 - Attributes should use double quotes.
@@ -162,21 +183,3 @@ Our standard for writing HTML.
     <!-- good -->
     <img alt="" src="//example.com/path/to/image.png" />
     ```
-
-
-## Tags
-
-- HTML tags should be self closed where appropriate.
-The forward slash at the end of the tag is not necessary in HTML5, but it helps readability.
-
-    ```html
-    <!-- bad -->
-    <link></link>
-
-    <!-- good -->
-    <link />
-    ```
-
-    ### Further reading
-
-    - [Treehouse: Close tags in HTML5](http://blog.teamtreehouse.com/to-close-or-not-to-close-tags-in-html5)
