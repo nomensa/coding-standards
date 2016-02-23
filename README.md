@@ -43,11 +43,18 @@ Each one is as important the next and focusing on just one can detriment the oth
 - [jQuery.com: Keep Things DRY](http://learn.jquery.com/code-organization/dont-repeat-yourself/)
 - [Steve Kwan: Best practices](https://github.com/stevekwan/best-practices/blob/master/javascript/best-practices.md#excessive-optimization)
 
+### Be consistent
+
+Above all:
+
+> If you're editing code, take a few minutes to look at the code around you and determine its style. If they use spaces around all their arithmetic operators, you should too. If their comments have little boxes of hash marks around them, make your comments have little boxes of hash marks around them too. *- Google HTML/CSS Style Guide*
+
 
 ## References
 
 These coding standards have been inspired by great work from the following sources:
 
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.xml)
 - [airbnb css](https://github.com/airbnb/css)
 - [airbnb javascript](https://github.com/airbnb/javascript)
 - [Learn jQuery](http://learn.jquery.com/)
