@@ -30,19 +30,19 @@ Our standard for writing SCSS.
 
 ## Sizing
 
-- Where possible, sizes should use the 'pxtoem' or 'pxtopercent' functions - especially for font sizes.
+- Where possible, sizes should use ems or percentages - especially for font sizes.
 
     ```scss
     // bad
     .block {
-        font-size: 12px;
-        margin: 10px;
+        font-size: 24px;
+        width: 300px;
     }
 
     // good
     .block {
-        font-size: pxtopercent(30);
-        margin: pxtoem(1);
+        font-size: 1.5em;
+        width: 30%;
     }
     ```
 
