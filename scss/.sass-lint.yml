@@ -1,0 +1,26 @@
+# https://github.com/sasstools/sass-lint/tree/master/docs/rules
+rules:
+  class-name-format:
+  - 2
+  -
+    convention: hyphenatedbem
+  final-newline: 0
+  force-pseudo-nesting: 0
+  indentation:
+  - 2
+  -
+    size: 4
+  leading-zero:
+  - 2
+  -
+    include: true
+  nesting-depth:
+  - 2
+  -
+    max-depth: 3
+  no-ids: 2
+  property-sort-order: 2
+  pseudo-element: 0
+  quotes: 2
+  space-around-operator: 0
+  space-before-brace: 2
