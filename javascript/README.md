@@ -5,6 +5,7 @@ Our standard for writing JavaScript.
 
 ## Table of Contents
 
+- [Modular pattern](#modular)
 - [Comments](#comments)
 - [Type checks](#type-checks)
 - [Variables](#variables)
@@ -15,6 +16,17 @@ Our standard for writing JavaScript.
 - [New instances](#new-instances)
 - [Conditional statements](#conditional-statements)
 - [Use of CSS](#use-of-css)
+
+## Modular
+We encourage the Modular design pattern to help manage variable scope.
+
+```javascript
+
+    (function foo(localjQuery) {
+        var $ = localjQuery;
+
+    })(jQuery);
+```
 
 
 ## Comments
@@ -248,6 +260,15 @@ Our standard for writing JavaScript.
     }
     ```
 
+- Anonymous functions should be named for debugging reasons.
+
+    ```javascript
+    // bad
+    var foo = (function() {});
+
+    // good
+    var foo = (function foo() {});
+    ```
 
 ## Statements
 
