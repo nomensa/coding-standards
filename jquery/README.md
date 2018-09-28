@@ -87,7 +87,7 @@ Our standard for writing jQuery.
     // better
     var nomensa = $('.nomensa');
 
-    $(nomensa).find('a');
+    nomensa.find('a');
     ```
 
     ### Further reading

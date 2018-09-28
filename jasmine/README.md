@@ -1,6 +1,5 @@
 # Jasmine
 
-
 ## Before and after each
 
 - Watch out for bottle-necks when using ```beforeEach``` and ```afterEach```
@@ -53,3 +52,17 @@
     In the *bad* example, we can recognise good and bad points.
     - (Good): The beforeEach function efficiently initiates the plugin for each test condition.
     - (Bad): Current and future developers will have to remember to check the beforeEach function for each condition.
+
+## Clean test markup
+
+- Markup used to initiate a plugin should be kept clean of HTML comments.
+A HTML comment can be easily introduced by copying the markup generated in the source code of the plugin.
+Logic errors can occur if markup contains the trailing HTML comment, as jQuery will count this as a second element.
+
+    ```javascript
+    // bad
+    var markup = '<div class="component"> </div> <!-- .component -->';
+
+    // good
+    var markup = '<div class="component"> </div>';
+    ```
