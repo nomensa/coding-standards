@@ -14,6 +14,7 @@ Our standard for writing JavaScript.
 - [Statements](#statements)
 - [New instances](#new-instances)
 - [Conditional statements](#conditional-statements)
+- [Use of CSS](#use-of-css)
 
 
 ## Comments
@@ -225,12 +226,12 @@ Our standard for writing JavaScript.
 
     ```javascript
     // bad
-    fooElement.addEventListener('click', function(e){
+    fooElement.addEventListener('click', function(e) {
         // ...stuff...
     });
 
     // good
-    fooElement.addEventListener.click('click', function(event){
+    fooElement.addEventListener('click', function(event) {
         // ...stuff...
     });
     ```
@@ -346,3 +347,24 @@ Our standard for writing JavaScript.
     // good
     if (condition !== 0)
     ```
+
+
+## Use of CSS
+
+- JavaScript should not contain CSS unless it is unavoidable.
+CSS is effective, maintainable and readable inside stylesheets. It is neither of those inside JavaScript.
+
+    ```javascript
+    // bad
+    $('.link').css('display', 'block');
+
+    // Unavoidable
+    $('.link').hide();
+
+    // Good
+    $('.link').toggleClass('hidden');
+    ```
+
+    ### Further reading
+
+    - [W3C: Avoid mixing technologies](https://www.w3.org/wiki/JavaScript_best_practices#Avoid_mixing_with_other_technologies)
